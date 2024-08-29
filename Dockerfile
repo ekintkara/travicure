@@ -22,7 +22,7 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # 8. 80 portunu açın
-EXPOSE 80
+EXPOSE 8080
 
 # 9. Nginx başlatın
 CMD ["nginx", "-g", "daemon off;"]
