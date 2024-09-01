@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 
 const FeatureItem = ({ title, content, isOpen, toggle }) => {
   return (
-    <div className="bg-[rgba(90,91,105,0.32)] p-4 rounded-lg shadow-lg">
+    <div className="bg-[rgba(90,91,105,0.32)] p-6 rounded-lg shadow-lg">
       <button
         onClick={toggle}
         aria-expanded={isOpen}
@@ -21,7 +21,7 @@ const FeatureItem = ({ title, content, isOpen, toggle }) => {
         </svg>
       </button>
       {isOpen && (
-        <div className="mt-2">
+        <div className="mt-4">
           <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
             <p className="absolute inset-0 flex items-center justify-center text-gray-600">Feature Image</p>
           </div>
@@ -85,12 +85,14 @@ const Features = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
       <Navbar />
-      <div className="pt-20 container mx-auto px-4 py-16">
-        <div className="space-y-4">
-          <h1 className="text-4xl font-extrabold mb-6 text-gray-100 text-center">Features</h1>
-          <p className="text-xl mb-8 text-gray-200 text-center">
+      <div className="pt-16 container mx-auto px-4 py-16">
+        <div className="text-center mb-16 mt-12">
+          <h1 className="text-4xl font-extrabold mb-4 text-gray-100">Features</h1>
+          <p className="text-xl mb-8 text-gray-200">
             Explore the powerful features of your Travian bot below:
           </p>
+        </div>
+        <div className="space-y-4">
           {features.map((feature, index) => (
             <FeatureItem
               key={index}

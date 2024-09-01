@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 const Homepage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-500 to-purple-600 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
       <Navbar />
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mt-20">
@@ -18,7 +18,7 @@ const Homepage = () => {
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="bg-white bg-opacity-20 text-gray-900 p-6 rounded-lg shadow-lg">
+          <Card className="bg-white bg-opacity-10 text-gray-900 p-6 rounded-lg shadow-lg">
             <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
               <p className="absolute inset-0 flex items-center justify-center text-gray-600">Efficient Farming Image</p>
             </div>
@@ -28,7 +28,7 @@ const Homepage = () => {
             </p>
           </Card>
 
-          <Card className="bg-white bg-opacity-20 text-gray-900 p-6 rounded-lg shadow-lg">
+          <Card className="bg-white bg-opacity-10 text-gray-900 p-6 rounded-lg shadow-lg">
             <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
               <p className="absolute inset-0 flex items-center justify-center text-gray-600">Smart Building Image</p>
             </div>
@@ -38,7 +38,7 @@ const Homepage = () => {
             </p>
           </Card>
 
-          <Card className="bg-white bg-opacity-20 text-gray-900 p-6 rounded-lg shadow-lg">
+          <Card className="bg-white bg-opacity-10 text-gray-900 p-6 rounded-lg shadow-lg">
             <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
               <p className="absolute inset-0 flex items-center justify-center text-gray-600">Advanced Combat Image</p>
             </div>

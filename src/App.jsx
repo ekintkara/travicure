@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar'; // Navbar bileşenini buraya import edin
+import Navbar from './components/Navbar';
 import Index from './pages/Index';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -10,11 +10,11 @@ import Download from './pages/Download';
 import FAQ from './pages/FAQ';
 import Videos from './pages/Videos';
 import Forum from './pages/Forum';
+import Dashboard from './pages/Dashboard'; // Dashboard bileşenini buraya import edin
 
 const App = () => {
   return (
     <Router>
-      <Navbar /> {/* Navbar bileşenini burada ekleyin */}
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
@@ -26,6 +26,7 @@ const App = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/dashboard" element={<Dashboard />} /> {/* Dashboard bileşenini buraya ekleyin */}
       </Routes>
     </Router>
   );
