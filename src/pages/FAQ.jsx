@@ -4,7 +4,9 @@ import { Button } from '@/components/ui/button';
 
 const FAQ = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-gradient-to-b from-blue-500 to-purple-600 text-white">
+    <Navbar /> 
+    <div className="container mx-auto px-4 py-40">
       <h1 className="text-3xl font-bold mb-4">Sıkça Sorulan Sorular</h1>
       <p className="text-lg mb-4">Burada Travicure hakkında sıkça sorulan soruları bulabilirsiniz:</p>
       <dl className="space-y-4 text-lg">
@@ -43,14 +45,10 @@ const FAQ = () => {
           <dd className="ml-4">Travicure, kullanıcı verilerini korumak için çeşitli güvenlik önlemleri alır. Ancak, oyun kurallarına uygunluğu ve güvenliği sağlamak için düzenli olarak güncellenir.</dd>
         </div>
       </dl>
-    <div className="min-h-screen bg-gradient-to-b from-blue-500 to-purple-600 text-white">
-      <Navbar /> 
-      <div className="container mx-auto px-4 py-40">
-      <h1 className="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
-      <p className="text-lg">FAQ content will be available here soon.</p>
-    </div>
-    </div>
+
   </div>
+  </div>
+  
   );
 };
 
