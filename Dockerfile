@@ -21,7 +21,7 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # 7. SSL sertifikalarını kopyalayın
 COPY ./certificate.crt /etc/nginx/ssl/certificate.crt
 COPY ./private.key /etc/nginx/ssl/private.key
-COPY ./ca-bundle.crt /etc/nginx/ssl/ca-bundle.crt
+COPY ./ca_bundle.crt /etc/nginx/ssl/ca-bundle.crt
 
 # 8. Nginx konfigürasyonunu kopyalayın
 COPY nginx.conf /etc/nginx/conf.d/default.conf
