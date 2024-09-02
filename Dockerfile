@@ -18,11 +18,17 @@ FROM nginx:alpine
 # 6. Yapıyı Nginx'in servis dizinine kopyalayın
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# 7. Nginx konfigürasyonunu kopyalayın (isteğe bağlı)
+# 7. SSL sertifikalarını kopyalayın
+COPY ./certificate.crt /etc/nginx/ssl/certificate.crt
+COPY ./private.key /etc/nginx/ssl/private.key
+COPY ./ca-bundle.crt /etc/nginx/ssl/ca-bundle.crt
+
+# 8. Nginx konfigürasyonunu kopyalayın
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# 8. 80 portunu açın
-EXPOSE 8080
+# 9. 80 ve 443 portlarını açın
+EXPOSE 80
+EXPOSE 443
 
-# 9. Nginx başlatın
+# 10. Nginx başlatın
 CMD ["nginx", "-g", "daemon off;"]
