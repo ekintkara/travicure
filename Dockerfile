@@ -1,34 +1,32 @@
-# 1. Node.js imajı ile derleme aşaması
-FROM node:18-alpine as builder
+# Aşama 1: Build Aşaması
+FROM node:18 AS build
 
-# 2. Çalışma dizini oluşturun
 WORKDIR /app
 
-# 3. Paketleri yükleyin
+# Package.json ve package-lock.json dosyalarını kopyalayın
 COPY package*.json ./
+
+# Bağımlılıkları yükleyin
 RUN npm install
 
-# 4. Projeyi kopyalayın ve derleyin
+# Uygulamayı kopyalayın
 COPY . .
+
+# Vite ile uygulamayı build edin
 RUN npm run build
 
-# 5. Nginx imajı ile servis aşaması
-FROM nginx:alpine
+# Aşama 2: Serve Aşaması
+FROM node:18
 
-# 6. Yapıyı Nginx'in servis dizinine kopyalayın
-COPY --from=builder /app/dist /usr/share/nginx/html
+WORKDIR /app
 
-# 7. SSL sertifikalarını kopyalayın
-COPY ./certificate.crt /etc/nginx/ssl/certificate.crt
-COPY ./private.key /etc/nginx/ssl/private.key
-COPY ./ca_bundle.crt /etc/nginx/ssl/ca-bundle.crt
+# Build edilen dosyaları kopyalayın
+COPY --from=build /app/dist /app
 
-# 8. Nginx konfigürasyonunu kopyalayın
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Uygulamayı serve etmek için bir basit HTTP sunucu kurun
+RUN npm install -g serve
 
-# 9. 80 ve 443 portlarını açın
-EXPOSE 80
-EXPOSE 443
+# Uygulamayı başlatın
+CMD ["serve", "-s", "build"]
 
-# 10. Nginx başlatın
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 3000
