@@ -1,32 +1,26 @@
-# Aşama 1: Build Aşaması
-FROM node:18 AS build
+# 1. Node.js image'ını kullanarak base imaj oluşturuyoruz.
+FROM node:18-alpine
 
+# 2. Çalışma dizinini belirleyin
 WORKDIR /app
 
-# Package.json ve package-lock.json dosyalarını kopyalayın
+# 3. package.json ve package-lock.json dosyalarını kopyalayın
 COPY package*.json ./
 
-# Bağımlılıkları yükleyin
+# 4. Node modüllerini yükleyin
 RUN npm install
 
-# Uygulamayı kopyalayın
+# 5. Uygulama kaynaklarını kopyalayın
 COPY . .
 
-# Vite ile uygulamayı build edin
+# 6. Vite ile uygulamayı üretime yönelik olarak derleyin
 RUN npm run build
 
-# Aşama 2: Serve Aşaması
-FROM node:18
-
-WORKDIR /app
-
-# Build edilen dosyaları kopyalayın
-COPY --from=build /app/dist /app
-
-# Uygulamayı serve etmek için bir basit HTTP sunucu kurun
+# 7. Serve paketiyle build edilen uygulamayı sunmak için serve paketini global olarak yükleyin
 RUN npm install -g serve
 
-# Uygulamayı başlatın
-CMD ["serve", "-s", "build"]
-
+# 8. Uygulamanın çalışacağı portu tanımlayın
 EXPOSE 3000
+
+# 9. Serve komutuyla uygulamayı başlatın
+CMD ["serve", "-s", "dist", "-l", "3000"]
