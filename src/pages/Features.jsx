@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '@/components/Navbar';
 
 const FeatureItem = ({ title, content, isOpen, toggle }) => {
   return (
@@ -81,7 +80,6 @@ const Features = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
-      <Navbar />
       <div className="pt-16 container mx-auto px-4 py-16">
         <div className="text-center mb-16 mt-12">
           <h1 className="text-4xl font-extrabold mb-4 text-gray-100">Features</h1>

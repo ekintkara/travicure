@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -13,7 +12,6 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
-      <Navbar />
       <div className="flex flex-col items-center px-4 py-20">
         <div className="w-full max-w-3xl">
           <Card className="bg-white bg-opacity-20 text-gray-100 p-6 rounded-lg shadow-lg">

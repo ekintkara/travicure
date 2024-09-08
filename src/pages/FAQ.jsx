@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
 
 const FAQ = () => {
@@ -11,7 +10,6 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
-      <Navbar />
       <div className="flex flex-col items-center px-4 py-16 md:py-24">
         <div className="w-full max-w-4xl">
           <h1 className="text-4xl font-extrabold mb-6 text-center text-gray-100">Frequently Asked Questions</h1>

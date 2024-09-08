@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; // i18n desteği
 import Navbar from './components/Navbar';
 import Index from './pages/Index';
 import Login from './pages/Login';
@@ -13,8 +14,11 @@ import Forum from './pages/Forum';
 import Dashboard from './pages/Dashboard'; // Dashboard bileşenini buraya import edin
 
 const App = () => {
+  const { t } = useTranslation(); // Çeviri fonksiyonu
+  
   return (
     <Router>
+      <Navbar /> {/* Navbar her sayfada yer alsın */}
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
@@ -26,7 +30,7 @@ const App = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/forum" element={<Forum />} />
-        <Route path="/dashboard" element={<Dashboard />} /> {/* Dashboard bileşenini buraya ekleyin */}
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );

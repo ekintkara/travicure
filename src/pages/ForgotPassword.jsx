@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Navbar from "@/components/Navbar";
 import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
@@ -16,7 +15,6 @@ const ForgotPassword = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
-      <Navbar />
       <div className="flex items-center justify-center min-h-screen px-4 py-12">
         <Card className="w-full max-w-md bg-[rgba(255,255,255,0.1)] text-white shadow-lg rounded-lg">
           <CardHeader>

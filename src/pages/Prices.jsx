@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 
 const Pricing = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-gray-100">
-      <Navbar />
       <div className="flex items-center justify-center min-h-screen px-4 py-12">
         <div className="w-full max-w-5xl">
           <div className="text-center mb-12">

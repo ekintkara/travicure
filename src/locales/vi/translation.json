@@ -1,0 +1,58 @@
+{
+    "homepage": {
+      "welcome": "Chào mừng đến với Travicure",
+      "subtitle": "Giải pháp bot tối ưu để nâng cao trải nghiệm chiến lược của bạn trong Travian.",
+      "features": {
+        "farmingTitle": "Canh Tác Hiệu Quả",
+        "farmingDescription": "Tự động thu thập tài nguyên và tối ưu hóa sự phát triển làng của bạn với các chiến lược canh tác thông minh.",
+        "farmingAlt": "Canh Tác Hiệu Quả",
+        "buildingTitle": "Xây Dựng Thông Minh",
+        "buildingDescription": "Nâng cấp các tòa nhà của bạn tự động dựa trên các chiến lược hiệu quả nhất để tối đa hóa hiệu suất.",
+        "buildingAlt": "Xây Dựng Thông Minh",
+        "combatTitle": "Chiến Đấu Nâng Cao",
+        "combatDescription": "Phối hợp các cuộc tấn công và phòng thủ với độ chính xác để vượt qua đối thủ của bạn trong Travian.",
+        "combatAlt": "Chiến Đấu Nâng Cao"
+      },
+      "getStarted": "Bắt Đầu",
+      "ready": "Sẵn sàng nâng cao trải nghiệm trò chơi của bạn chưa?",
+      "join": "Bot Travian của chúng tôi cung cấp tất cả các công cụ bạn cần để thống trị trò chơi. Tham gia ngay hôm nay và bắt đầu tối ưu hóa chiến lược của bạn!",
+      "learnMore": "Tìm Hiểu Thêm"
+    },
+    "homepageMenu": "Trang Chủ",
+    "features": "Tính Năng",
+    "prices": "Giá",
+    "download": "Tải Về",
+    "faq": "Câu Hỏi Thường Gặp",
+    "login": "Đăng Nhập",
+    "register": "Đăng Ký",
+    "forgotPassword": "Quên Mật Khẩu",
+    "enterEmail": "Nhập email của bạn",
+    "enterPassword": "Nhập mật khẩu của bạn",
+    "email": "Email",
+    "password": "Mật Khẩu",
+    "contactSupport": "Liên Hệ Hỗ Trợ",
+    "videos": "Video",
+    "videosSoon": "Nội dung video sẽ sớm có mặt tại đây.",
+    "pricingPlans": "Các Gói Giá",
+    "choosePlan": "Chọn gói phù hợp nhất với nhu cầu của bạn và bắt đầu tối ưu hóa trải nghiệm Travian của bạn ngay hôm nay!",
+    "basicPlan": "Gói Cơ Bản",
+    "standardPlan": "Gói Tiêu Chuẩn",
+    "premiumPlan": "Gói Cao Cấp",
+    "month": "/tháng",
+    "getStarted": "Bắt Đầu",
+    "faqTitle": "Câu Hỏi Thường Gặp",
+    "faqSubtitle": "Dưới đây là một số câu hỏi thường gặp về bot Travian của chúng tôi. Nếu bạn có thêm câu hỏi, đừng ngần ngại liên hệ với đội hỗ trợ của chúng tôi.",
+    "faq": {
+      "q1": "1. Bot Travian là gì?",
+      "a1": "Bot Travian tự động hóa các quá trình chính trong trò chơi chiến lược Travian, chẳng hạn như quản lý tài nguyên, xây dựng và các hoạt động quân sự. Nó được thiết kế để giúp bạn tiết kiệm thời gian và cải thiện hiệu quả.",
+      "q2": "2. Bot cung cấp những tính năng gì?",
+      "a2": "Bot bao gồm các tính năng như quản lý tài nguyên tự động, tự động hóa xây dựng thông minh, huấn luyện quân đội, lập lịch sự kiện (lễ hội), quản lý tấn công và phòng thủ, thông báo theo thời gian thực, tự động chuyển giao và giao dịch tài nguyên, lập kế hoạch tấn công và trồng trọt chiến lược, theo dõi trạng thái trực tuyến.",
+      "q3": "3. Tôi cài đặt và sử dụng bot như thế nào?",
+      "a3": "Để bắt đầu, hãy tải bot từ trang web của chúng tôi và làm theo hướng dẫn cài đặt. Sau khi cài đặt, hãy cấu hình cài đặt của bạn qua bảng điều khiển dễ sử dụng để tự động hóa các nhiệm vụ khác nhau trong trò chơi của bạn.",
+      "q4": "4. Có các gói đăng ký cho bot không?",
+      "a4": "Có, chúng tôi cung cấp các gói đăng ký khác nhau. Hãy xem phần giá của chúng tôi để biết thông tin chi tiết về các gói Cơ Bản, Tiêu Chuẩn và Cao Cấp, phù hợp với các nhu cầu và ngân sách khác nhau.",
+      "q5": "5. Bot Travian có an toàn không?",
+      "a5": "Chúng tôi ưu tiên sự an toàn của bạn. Bot được cập nhật thường xuyên để tuân thủ các quy tắc trò chơi mới nhất, và chúng tôi thực hiện các biện pháp bảo vệ dữ liệu mạnh mẽ để đảm bảo thông tin của bạn luôn được an toàn."
+    }
+  }
+  

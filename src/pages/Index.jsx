@@ -1,16 +1,17 @@
-import Navbar from "@/components/Navbar"; // Import Navbar
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useTranslation } from "react-i18next"; // i18n çeviri desteği ekliyoruz
 
 const Homepage = () => {
+  const { t } = useTranslation(); // Çeviri fonksiyonunu alıyoruz
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
-      <Navbar />
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mt-20">
-          <h1 className="text-5xl font-extrabold mb-6">Welcome to Travicure</h1>
+          <h1 className="text-5xl font-extrabold mb-6">{t('homepage.welcome')}</h1> {/* Çeviri */}
           <p className="text-xl mb-8">
-            The ultimate bot solution for enhancing your Travian strategy experience.
+            {t('homepage.subtitle')} {/* Çeviri */}
           </p>
         </div>
 
@@ -19,16 +20,14 @@ const Homepage = () => {
             <div className="relative mb-4">
               <img
                 src="/images/raid.png"
-                alt="Efficient Farming"
-                className="h-64 w-full object-contain rounded-lg" // Zoom'u kaldırmak için object-contain kullanıyoruz
+                alt={t('homepage.features.farmingAlt')} // Alt metin için çeviri
+                className="h-64 w-full object-contain rounded-lg"
               />
             </div>
-            <h2 className="text-2xl font-semibold mb-4">Efficient Farming</h2>
-            <p>
-              Automate resource collection and optimize your village growth with intelligent farming strategies.
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">{t('homepage.features.farmingTitle')}</h2> {/* Çeviri */}
+            <p>{t('homepage.features.farmingDescription')}</p> {/* Çeviri */}
             <Button className="mt-4 bg-white text-blue-600 hover:bg-blue-100">
-              Get Started
+              {t('homepage.getStarted')} {/* Çeviri */}
             </Button>
           </Card>
 
@@ -36,16 +35,14 @@ const Homepage = () => {
             <div className="relative mb-4">
               <img
                 src="/images/build.png"
-                alt="Smart Building"
-                className="h-64 w-full object-contain rounded-lg" // Zoom'u kaldırmak için object-contain kullanıyoruz
+                alt={t('homepage.features.buildingAlt')} // Alt metin için çeviri
+                className="h-64 w-full object-contain rounded-lg"
               />
             </div>
-            <h2 className="text-2xl font-semibold mb-4">Smart Building</h2>
-            <p>
-              Upgrade your buildings automatically based on the most effective strategies to maximize efficiency.
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">{t('homepage.features.buildingTitle')}</h2> {/* Çeviri */}
+            <p>{t('homepage.features.buildingDescription')}</p> {/* Çeviri */}
             <Button className="mt-4 bg-white text-blue-600 hover:bg-blue-100">
-              Get Started
+              {t('homepage.getStarted')} {/* Çeviri */}
             </Button>
           </Card>
 
@@ -53,27 +50,25 @@ const Homepage = () => {
             <div className="relative mb-4">
               <img
                 src="/images/stats.png"
-                alt="Advanced Combat"
-                className="h-64 w-full object-contain rounded-lg" // Zoom'u kaldırmak için object-contain kullanıyoruz
+                alt={t('homepage.features.combatAlt')} // Alt metin için çeviri
+                className="h-64 w-full object-contain rounded-lg"
               />
             </div>
-            <h2 className="text-2xl font-semibold mb-4">Advanced Combat</h2>
-            <p>
-              Coordinate attacks and defenses with precision to stay ahead of your competitors in Travian.
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">{t('homepage.features.combatTitle')}</h2> {/* Çeviri */}
+            <p>{t('homepage.features.combatDescription')}</p> {/* Çeviri */}
             <Button className="mt-4 bg-white text-blue-600 hover:bg-blue-100">
-              Get Started
+              {t('homepage.getStarted')} {/* Çeviri */}
             </Button>
           </Card>
         </div>
 
         <div className="text-center mt-20">
-          <h2 className="text-3xl font-bold mb-4">Ready to Enhance Your Game?</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('homepage.ready')}</h2> {/* Çeviri */}
           <p className="text-lg mb-8">
-            Our Travian bot provides all the tools you need to dominate the game. Join us today and start optimizing your strategy!
+            {t('homepage.join')} {/* Çeviri */}
           </p>
           <Button className="bg-white text-blue-600 hover:bg-blue-100">
-            Learn More
+            {t('homepage.learnMore')} {/* Çeviri */}
           </Button>
         </div>
       </div>

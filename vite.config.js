@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from "url";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
+import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,7 +10,12 @@ export default defineConfig({
     host: "::",
     port: "8080",
   },
-  plugins: [react()],
+  plugins: [
+    svgr({
+      exportAsDefault: true,  // Varsayılan olarak SVG'yi export etmesini sağlıyoruz
+    }),
+    react()
+  ],
   resolve: {
     alias: [
       {

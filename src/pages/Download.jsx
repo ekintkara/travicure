@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from '@/components/Navbar';
 
 const Download = () => {
   const [downloadStarted, setDownloadStarted] = useState(false);
@@ -15,7 +14,6 @@ const Download = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white flex items-center justify-center">
-      <Navbar />
       <div className="bg-[rgba(90,91,105,0.32)] p-8 rounded-lg shadow-lg text-center max-w-lg w-full">
         <h1 className="text-4xl font-extrabold mb-6 text-gray-100">Download Travian Bot</h1>
         <p className="text-lg text-gray-200 mb-8">
