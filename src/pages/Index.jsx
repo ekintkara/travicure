@@ -12,40 +12,58 @@ const Homepage = () => {
           <p className="text-xl mb-8">
             The ultimate bot solution for enhancing your Travian strategy experience.
           </p>
-          <Button className="bg-white text-blue-600 hover:bg-blue-100">
-            Get Started
-          </Button>
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="bg-white bg-opacity-10 text-gray-900 p-6 rounded-lg shadow-lg">
-            <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
-              <p className="absolute inset-0 flex items-center justify-center text-gray-600">Efficient Farming Image</p>
+            <div className="relative mb-4">
+              <img
+                src="/images/raid.png"
+                alt="Efficient Farming"
+                className="h-64 w-full object-contain rounded-lg" // Zoom'u kaldırmak için object-contain kullanıyoruz
+              />
             </div>
             <h2 className="text-2xl font-semibold mb-4">Efficient Farming</h2>
             <p>
               Automate resource collection and optimize your village growth with intelligent farming strategies.
             </p>
+            <Button className="mt-4 bg-white text-blue-600 hover:bg-blue-100">
+              Get Started
+            </Button>
           </Card>
 
           <Card className="bg-white bg-opacity-10 text-gray-900 p-6 rounded-lg shadow-lg">
-            <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
-              <p className="absolute inset-0 flex items-center justify-center text-gray-600">Smart Building Image</p>
+            <div className="relative mb-4">
+              <img
+                src="/images/build.png"
+                alt="Smart Building"
+                className="h-64 w-full object-contain rounded-lg" // Zoom'u kaldırmak için object-contain kullanıyoruz
+              />
             </div>
             <h2 className="text-2xl font-semibold mb-4">Smart Building</h2>
             <p>
               Upgrade your buildings automatically based on the most effective strategies to maximize efficiency.
             </p>
+            <Button className="mt-4 bg-white text-blue-600 hover:bg-blue-100">
+              Get Started
+            </Button>
           </Card>
 
           <Card className="bg-white bg-opacity-10 text-gray-900 p-6 rounded-lg shadow-lg">
-            <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
-              <p className="absolute inset-0 flex items-center justify-center text-gray-600">Advanced Combat Image</p>
+            <div className="relative mb-4">
+              <img
+                src="/images/stats.png"
+                alt="Advanced Combat"
+                className="h-64 w-full object-contain rounded-lg" // Zoom'u kaldırmak için object-contain kullanıyoruz
+              />
             </div>
             <h2 className="text-2xl font-semibold mb-4">Advanced Combat</h2>
             <p>
               Coordinate attacks and defenses with precision to stay ahead of your competitors in Travian.
             </p>
+            <Button className="mt-4 bg-white text-blue-600 hover:bg-blue-100">
+              Get Started
+            </Button>
           </Card>
         </div>
 

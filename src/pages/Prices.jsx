@@ -23,8 +23,9 @@ const Pricing = () => {
                   $10<span className="text-base font-medium">/month</span>
                 </p>
                 <ul className="mb-6 text-gray-300 text-left mx-auto max-w-xs">
-                  <li className="mb-2">Efficient Farming</li>
+                  <li className="mb-2">Automated Resource Management</li>
                   <li className="mb-2">Basic Building Automation</li>
+                  <li className="mb-2">Troop Training Support</li>
                   <li className="mb-2">Standard Support</li>
                 </ul>
               </div>
@@ -41,9 +42,10 @@ const Pricing = () => {
                   $25<span className="text-base font-medium">/month</span>
                 </p>
                 <ul className="mb-6 text-gray-300 text-left mx-auto max-w-xs">
-                  <li className="mb-2">Efficient Farming</li>
-                  <li className="mb-2">Smart Building</li>
-                  <li className="mb-2">Advanced Combat</li>
+                  <li className="mb-2">Efficient Farming Automation</li>
+                  <li className="mb-2">Advanced Building Automation</li>
+                  <li className="mb-2">Combat Strategy Assistance</li>
+                  <li className="mb-2">Attack and Defense Alerts</li>
                   <li className="mb-2">Priority Support</li>
                 </ul>
               </div>
@@ -61,8 +63,10 @@ const Pricing = () => {
                 </p>
                 <ul className="mb-6 text-gray-300 text-left mx-auto max-w-xs">
                   <li className="mb-2">All Standard Plan Features</li>
-                  <li className="mb-2">Custom Strategies</li>
-                  <li className="mb-2">Exclusive Features</li>
+                  <li className="mb-2">Custom Farming and Building Strategies</li>
+                  <li className="mb-2">Real-time Online Status Monitoring</li>
+                  <li className="mb-2">Hero Adventure Automation</li>
+                  <li className="mb-2">Resource Transfer and Trade Automation</li>
                   <li className="mb-2">24/7 Premium Support</li>
                 </ul>
               </div>

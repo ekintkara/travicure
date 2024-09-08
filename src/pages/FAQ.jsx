@@ -1,8 +1,7 @@
 import { useState } from "react";
-import Navbar from "@/components/Navbar"; // Import Navbar
+import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
 
-// FAQ Component
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -14,21 +13,21 @@ const FAQ = () => {
     <div className="min-h-screen bg-gradient-to-b from-blue-400 to-purple-500 text-white">
       <Navbar />
       <div className="flex flex-col items-center px-4 py-16 md:py-24">
-        <div className="w-full max-w-3xl">
-          <h1 className="text-4xl font-extrabold mb-6 text-center">Frequently Asked Questions</h1>
-          <p className="text-lg mb-12 text-center">
-            Below are some frequently asked questions about our Travian bot:
+        <div className="w-full max-w-4xl">
+          <h1 className="text-4xl font-extrabold mb-6 text-center text-gray-100">Frequently Asked Questions</h1>
+          <p className="text-lg mb-12 text-center text-gray-300">
+            Below are some common questions about our Travian bot. If you have more queries, feel free to contact our support team.
           </p>
           <div className="space-y-6">
             {faqData.map((item, index) => (
-              <Card key={index} className="bg-white bg-opacity-10 text-gray-100 p-6 rounded-lg shadow-lg">
+              <Card key={index} className="bg-[rgba(90,91,105,0.32)] p-6 rounded-lg shadow-lg text-gray-100">
                 <button
-                  className="w-full text-left flex items-center justify-between"
+                  className="w-full text-left flex items-center justify-between focus:outline-none"
                   onClick={() => toggleItem(index)}
                 >
                   <h2 className="text-2xl font-semibold">{item.question}</h2>
                   <svg
-                    className={`w-6 h-6 transition-transform ${openIndex === index ? 'rotate-45' : 'rotate-0'}`}
+                    className={`w-6 h-6 transition-transform duration-300 ${openIndex === index ? 'rotate-45' : 'rotate-0'}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -38,8 +37,8 @@ const FAQ = () => {
                   </svg>
                 </button>
                 {openIndex === index && (
-                  <div className="mt-4">
-                    <p>{item.answer}</p>
+                  <div className="mt-4 transition-opacity duration-300">
+                    <p className="text-gray-200">{item.answer}</p>
                   </div>
                 )}
               </Card>
@@ -55,39 +54,39 @@ const FAQ = () => {
 const faqData = [
   {
     question: '1. What is the Travian bot?',
-    answer: 'The Travian bot is a software that automates various tasks in the Travian strategy game. It automates processes such as resource collection, construction, and military operations.'
+    answer: 'The Travian bot automates key processes in the Travian strategy game, such as resource management, construction, and military operations. It’s designed to help you save time and improve efficiency.'
   },
   {
-    question: '2. What are the main features of the bot?',
+    question: '2. What features does the bot offer?',
     answer: (
       <>
-        The main features of the bot are:
-        <ul className="list-disc list-inside mt-2">
-          <li>Resource Management and Construction</li>
-          <li>Military Training</li>
-          <li>Festival Organization</li>
-          <li>Attack Management</li>
-          <li>Notifications</li>
-          <li>Defense Management</li>
-          <li>Resource Transfer and Trade</li>
-          <li>Farming and Attack Planning</li>
-          <li>Online Status Tracking</li>
-          <li>Hero Adventures</li>
+        The bot includes features like:
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Automated Resource Management</li>
+          <li>Smart Building Automation</li>
+          <li>Troop Training</li>
+          <li>Event Scheduling (Festivals)</li>
+          <li>Attack and Defense Management</li>
+          <li>Real-time Notifications</li>
+          <li>Resource Transfer and Trading Automation</li>
+          <li>Strategic Farming and Attack Planning</li>
+          <li>Online Status Monitoring</li>
+          <li>Hero Adventure Management</li>
         </ul>
       </>
     )
   },
   {
-    question: '3. How do I use the Travian bot?',
-    answer: 'To start using the Travian bot, you need to download and install the application and configure the necessary settings. You can follow the user guide to learn how to use it step by step.'
+    question: '3. How do I install and use the bot?',
+    answer: 'To get started, simply download the bot from our website and follow the installation instructions. Once installed, configure your settings through the intuitive dashboard to automate various tasks in your game.'
   },
   {
-    question: '4. Is the bot paid?',
-    answer: 'The bot may have different subscription plans. For more information on prices, you can visit the official website.'
+    question: '4. Are there subscription plans for the bot?',
+    answer: 'Yes, we offer different subscription plans. Check out our pricing section for details on the Basic, Standard, and Premium plans that suit different needs and budgets.'
   },
   {
     question: '5. Is the Travian bot secure?',
-    answer: 'The Travian bot implements various security measures to protect user data. It is also regularly updated to ensure compliance with game rules and maintain security.'
+    answer: 'We prioritize your safety. The bot is regularly updated to comply with the latest game rules, and we implement strong data protection measures to ensure your information remains secure.'
   }
 ];
 

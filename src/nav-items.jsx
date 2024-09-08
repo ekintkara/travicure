@@ -1,4 +1,4 @@
-import { HomeIcon, LogInIcon, UserPlusIcon, StarIcon, DollarSignIcon, DownloadIcon, HelpCircleIcon } from "lucide-react";
+import { HomeIcon, LogInIcon, UserPlusIcon, StarIcon, DollarSignIcon, DownloadIcon, HelpCircleIcon, PlayCircleIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
@@ -7,6 +7,7 @@ import Features from "./pages/Features.jsx";
 import Prices from "./pages/Prices.jsx";
 import Download from "./pages/Download.jsx";
 import FAQ from "./pages/FAQ.jsx";
+import Videos from "./pages/Videos.jsx";
 import Forum from "./pages/Forum.jsx";
 
 /**
@@ -55,5 +56,5 @@ export const navItems = [
     icon: <UserPlusIcon className="h-4 w-4" />,
     page: <Register />,
   },
-  // Removed Videos entry
+  // Remove the Forgot Password entry
 ];

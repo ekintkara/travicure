@@ -22,9 +22,6 @@ const FeatureItem = ({ title, content, isOpen, toggle }) => {
       </button>
       {isOpen && (
         <div className="mt-4">
-          <div className="relative mb-4 bg-gray-300 h-64 rounded-lg">
-            <p className="absolute inset-0 flex items-center justify-center text-gray-600">Feature Image</p>
-          </div>
           <p className="text-gray-200">{content}</p>
         </div>
       )}
@@ -42,43 +39,43 @@ const Features = () => {
   const features = [
     {
       title: 'Building and Resource Management',
-      content: 'Construction and upgrading of buildings and development of resource fields.',
+      content: 'Take control of your village’s infrastructure. Efficiently construct and upgrade buildings while managing resource fields to ensure optimal growth and production.',
     },
     {
       title: 'Troop Training',
-      content: "Training of troops and improvements at the blacksmith's workshop.",
+      content: "Train a formidable army to protect your village and conquer others. Utilize the blacksmith's workshop to enhance their combat skills and capabilities.",
     },
     {
       title: 'Festivals',
-      content: 'Automatic organization of festivals.',
+      content: 'Keep your villagers happy by automatically organizing grand festivals to boost morale and culture.',
     },
     {
       title: 'Attack Management',
-      content: 'Detecting attacks, withdrawing troops, and spending resources.',
+      content: 'React swiftly to incoming attacks by withdrawing troops and securing your resources. Ensure you’re always one step ahead of your enemies.',
     },
     {
       title: 'Notifications',
-      content: 'Sending notifications to the user.',
+      content: 'Stay informed with real-time notifications about incoming attacks, completed tasks, or other important game events.',
     },
     {
       title: 'Defense Management',
-      content: 'Planning and managing defense operations.',
+      content: 'Strategically plan your defenses to protect your village from enemy raids. Fortify your stronghold and be ready for any assault.',
     },
     {
       title: 'Resource Transfer and Trade',
-      content: 'Transferring resources and automatic NPC trading.',
+      content: 'Easily transfer resources between your villages and engage in automatic NPC trading to maximize your economic efficiency.',
     },
     {
       title: 'Farming and Attack Planning',
-      content: 'Conducting farming, troop gathering, attack planning, and sending waves.',
+      content: 'Strategically plan farming raids and military attacks. Coordinate troop movements and send waves of attacks to overwhelm your opponents.',
     },
     {
       title: 'Online Status Detection',
-      content: 'Monitoring the online status of multihunters and other players.',
+      content: 'Monitor the online status of multihunters and enemy players to plan your moves accordingly and avoid unnecessary confrontations.',
     },
     {
       title: 'Hero Adventures',
-      content: 'Managing hero adventures and reading messages.',
+      content: 'Send your hero on thrilling adventures and manage their progress. Read important game messages to stay on top of in-game developments.',
     },
   ];
 
